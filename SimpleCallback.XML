@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScriptContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="http://lab-iniws01/scriptcontainer.xsd" BusNo="4597359" UserID="20775495">
+  <Actions>
+    <ActionStruct>
+      <ActionID>6</ActionID>
+      <Action>HANGUP</Action>
+      <Caption>Hangup</Caption>
+      <Parameters />
+      <Branches />
+      <Cases />
+      <X>288</X>
+      <Y>304</Y>
+      <DependencyOrder>5</DependencyOrder>
+      <Impl_Type>0</Impl_Type>
+      <LibraryID>b64a6796-4f66-4b1b-a9b5-3af926ab4b7c</LibraryID>
+      <ExtraInfo>
+        <DefaultBranch>
+          <ActionId>-1</ActionId>
+          <Segments />
+        </DefaultBranch>
+        <Branches />
+        <CaseBranches />
+      </ExtraInfo>
+      <xws>0</xws>
+      <yws>0</yws>
+    </ActionStruct>
+    <ActionStruct>
+      <ActionID>5</ActionID>
+      <Action>HANGUP</Action>
+      <Caption>Hangup</Caption>
+      <Parameters />
+      <Branches />
+      <Cases />
+      <X>464</X>
+      <Y>320</Y>
+      <DependencyOrder>4</DependencyOrder>
+      <Impl_Type>0</Impl_Type>
+      <LibraryID>b64a6796-4f66-4b1b-a9b5-3af926ab4b7c</LibraryID>
+      <ExtraInfo>
+        <DefaultBranch>
+          <ActionId>-1</ActionId>
+          <Segments />
+        </DefaultBranch>
+        <Branches />
+        <CaseBranches />
+      </ExtraInfo>
+      <xws>0</xws>
+      <yws>0</yws>
+    </ActionStruct>
+    <ActionStruct>
+      <ActionID>4</ActionID>
+      <Action>CALLBACK</Action>
+      <Caption>Callback</Caption>
+      <Parameters>
+        <string>{ANI}</string>
+        <string>{DNIS}</string>
+        <string>0</string>
+      </Parameters>
+      <DefaultNextAction>
+        <Text />
+        <ActionID>5</ActionID>
+        <Index>0</Index>
+        <Segments />
+      </DefaultNextAction>
+      <Branches />
+      <Cases />
+      <X>544</X>
+      <Y>208</Y>
+      <DependencyOrder>3</DependencyOrder>
+      <Impl_Type>0</Impl_Type>
+      <LibraryID>75589a46-6d3c-4865-9ba4-48d05ec3a2f3</LibraryID>
+      <ExtraInfo>
+        <DefaultBranch>
+          <ActionId>5</ActionId>
+          <Segments />
+        </DefaultBranch>
+        <Branches />
+        <CaseBranches />
+      </ExtraInfo>
+      <xws>0</xws>
+      <yws>0</yws>
+    </ActionStruct>
+    <ActionStruct>
+      <ActionID>3</ActionID>
+      <Action>QUERYCALLBACK</Action>
+      <Caption>Querycallback</Caption>
+      <Parameters>
+        <string>{ANI}</string>
+        <string>14359042</string>
+      </Parameters>
+      <Branches>
+        <BranchStruct>
+          <Text>CallbacksFound</Text>
+          <ActionID>5</ActionID>
+          <Index>0</Index>
+          <Segments />
+        </BranchStruct>
+        <BranchStruct>
+          <Text>NoCallbacksFound</Text>
+          <ActionID>4</ActionID>
+          <Index>1</Index>
+          <Segments />
+        </BranchStruct>
+      </Branches>
+      <Cases />
+      <X>400</X>
+      <Y>208</Y>
+      <DependencyOrder>2</DependencyOrder>
+      <Impl_Type>0</Impl_Type>
+      <LibraryID>27abefab-29f5-4df6-becf-405a09514649</LibraryID>
+      <ExtraInfo>
+        <DefaultBranch>
+          <ActionId>-1</ActionId>
+          <Segments />
+        </DefaultBranch>
+        <Branches>
+          <BranchInfo>
+            <KeyName>0</KeyName>
+            <ActionId>5</ActionId>
+            <Segments />
+          </BranchInfo>
+          <BranchInfo>
+            <KeyName>1</KeyName>
+            <ActionId>4</ActionId>
+            <Segments />
+          </BranchInfo>
+        </Branches>
+        <CaseBranches />
+      </ExtraInfo>
+      <xws>0</xws>
+      <yws>0</yws>
+    </ActionStruct>
+    <ActionStruct>
+      <ActionID>2</ActionID>
+      <Action>MENU</Action>
+      <Caption>Menu</Caption>
+      <Parameters>
+        <string>"%Press 1 if you'd like a callback instead of waiting on hold. Press 2 to hangup, Otherwise, stay on the line"</string>
+        <string />
+        <string>True</string>
+        <string>1</string>
+        <string>#-</string>
+        <string>5</string>
+        <string>5</string>
+        <string>MRES</string>
+      </Parameters>
+      <Branches />
+      <Cases>
+        <BranchStruct>
+          <Text>1</Text>
+          <ActionID>3</ActionID>
+          <Index>0</Index>
+          <Segments />
+        </BranchStruct>
+        <BranchStruct>
+          <Text>2</Text>
+          <ActionID>6</ActionID>
+          <Index>0</Index>
+          <Segments />
+        </BranchStruct>
+      </Cases>
+      <X>288</X>
+      <Y>208</Y>
+      <DependencyOrder>1</DependencyOrder>
+      <Impl_Type>0</Impl_Type>
+      <LibraryID>daee9c00-12ce-4222-a42e-307c37d53b7f</LibraryID>
+      <ExtraInfo>
+        <DefaultBranch>
+          <ActionId>-1</ActionId>
+          <Segments />
+        </DefaultBranch>
+        <Branches />
+        <CaseBranches>
+          <BranchInfo>
+            <KeyName>1</KeyName>
+            <ActionId>3</ActionId>
+            <Segments />
+          </BranchInfo>
+          <BranchInfo>
+            <KeyName>2</KeyName>
+            <ActionId>6</ActionId>
+            <Segments />
+          </BranchInfo>
+        </CaseBranches>
+      </ExtraInfo>
+      <xws>0</xws>
+      <yws>0</yws>
+    </ActionStruct>
+    <ActionStruct>
+      <ActionID>1</ActionID>
+      <Action>BEGIN</Action>
+      <Caption>Begin</Caption>
+      <Parameters>
+        <string />
+        <string />
+        <string />
+      </Parameters>
+      <DefaultNextAction>
+        <Text />
+        <ActionID>2</ActionID>
+        <Index>0</Index>
+        <Segments />
+      </DefaultNextAction>
+      <Branches />
+      <Cases />
+      <X>128</X>
+      <Y>208</Y>
+      <DependencyOrder>0</DependencyOrder>
+      <Impl_Type>0</Impl_Type>
+      <LibraryID>b2f794c5-0232-40e7-9830-76d573bf57d7</LibraryID>
+      <ExtraInfo>
+        <DefaultBranch>
+          <ActionId>2</ActionId>
+          <Segments />
+        </DefaultBranch>
+        <Branches />
+        <CaseBranches />
+      </ExtraInfo>
+      <xws>0</xws>
+      <yws>0</yws>
+    </ActionStruct>
+  </Actions>
+  <LibraryItem LibraryID="a69a5112-f64d-4593-94bc-d8d5e232ce23" ApiClassificationId="0" BusNo="4597359" Name="SimpleCallback" Alias="SimpleCallback" MediaType="4" RoutingMode="" VariableRedaction="">
+    <Icon>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</Icon>
+    <ImplPath>Sean Lima\SimpleCallback</ImplPath>
+    <CreateDate>2023-03-14T21:08:57.427</CreateDate>
+    <ModifyDate>2024-01-07T20:50:05.13</ModifyDate>
+    <ModifyUserID>20775495</ModifyUserID>
+    <ModifiedBy>Sean Lima</ModifiedBy>
+    <URI>/custom/4597359/SimpleCallback</URI>
+    <DefaultTimeZone>Mountain Standard Time</DefaultTimeZone>
+    <Parameters />
+    <Branches />
+  </LibraryItem>
+  <MediaType>4</MediaType>
+  <ModifyDate>0001-01-01T00:00:00</ModifyDate>
+</ScriptContainer>
