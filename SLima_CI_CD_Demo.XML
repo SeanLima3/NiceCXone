@@ -2,29 +2,6 @@
 <ScriptContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="http://lab-iniws01/scriptcontainer.xsd" BusNo="4597359" UserID="20775495">
   <Actions>
     <ActionStruct>
-      <ActionID>7</ActionID>
-      <Action>HANGUP</Action>
-      <Caption>Hangup</Caption>
-      <Parameters />
-      <Branches />
-      <Cases />
-      <X>224</X>
-      <Y>336</Y>
-      <DependencyOrder>1</DependencyOrder>
-      <Impl_Type>0</Impl_Type>
-      <LibraryID>b64a6796-4f66-4b1b-a9b5-3af926ab4b7c</LibraryID>
-      <ExtraInfo>
-        <DefaultBranch>
-          <ActionId>-1</ActionId>
-          <Segments />
-        </DefaultBranch>
-        <Branches />
-        <CaseBranches />
-      </ExtraInfo>
-      <xws>0</xws>
-      <yws>0</yws>
-    </ActionStruct>
-    <ActionStruct>
       <ActionID>6</ActionID>
       <Action>HANGUP</Action>
       <Caption>Hangup</Caption>
@@ -33,7 +10,7 @@
       <Cases />
       <X>288</X>
       <Y>304</Y>
-      <DependencyOrder>6</DependencyOrder>
+      <DependencyOrder>5</DependencyOrder>
       <Impl_Type>0</Impl_Type>
       <LibraryID>b64a6796-4f66-4b1b-a9b5-3af926ab4b7c</LibraryID>
       <ExtraInfo>
@@ -56,7 +33,7 @@
       <Cases />
       <X>464</X>
       <Y>320</Y>
-      <DependencyOrder>5</DependencyOrder>
+      <DependencyOrder>4</DependencyOrder>
       <Impl_Type>0</Impl_Type>
       <LibraryID>b64a6796-4f66-4b1b-a9b5-3af926ab4b7c</LibraryID>
       <ExtraInfo>
@@ -89,7 +66,7 @@
       <Cases />
       <X>560</X>
       <Y>208</Y>
-      <DependencyOrder>4</DependencyOrder>
+      <DependencyOrder>3</DependencyOrder>
       <Impl_Type>0</Impl_Type>
       <LibraryID>75589a46-6d3c-4865-9ba4-48d05ec3a2f3</LibraryID>
       <ExtraInfo>
@@ -128,7 +105,7 @@
       <Cases />
       <X>400</X>
       <Y>208</Y>
-      <DependencyOrder>3</DependencyOrder>
+      <DependencyOrder>2</DependencyOrder>
       <Impl_Type>0</Impl_Type>
       <LibraryID>27abefab-29f5-4df6-becf-405a09514649</LibraryID>
       <ExtraInfo>
@@ -181,16 +158,10 @@
           <Index>0</Index>
           <Segments />
         </BranchStruct>
-        <BranchStruct>
-          <Text>3</Text>
-          <ActionID>7</ActionID>
-          <Index>0</Index>
-          <Segments />
-        </BranchStruct>
       </Cases>
       <X>288</X>
       <Y>208</Y>
-      <DependencyOrder>2</DependencyOrder>
+      <DependencyOrder>1</DependencyOrder>
       <Impl_Type>0</Impl_Type>
       <LibraryID>daee9c00-12ce-4222-a42e-307c37d53b7f</LibraryID>
       <ExtraInfo>
@@ -208,11 +179,6 @@
           <BranchInfo>
             <KeyName>2</KeyName>
             <ActionId>6</ActionId>
-            <Segments />
-          </BranchInfo>
-          <BranchInfo>
-            <KeyName>3</KeyName>
-            <ActionId>7</ActionId>
             <Segments />
           </BranchInfo>
         </CaseBranches>
